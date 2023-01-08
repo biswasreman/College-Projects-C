@@ -2,18 +2,20 @@
 int main()
 {
 
-int num, temp, rem, i = 1, sum = 0;
-printf("Enter any decimal number: ");
-scanf("%d", &num);
-temp = num;
+    int arr[15], num, i, j;
+    i = 0;
+    printf("Enter any decimal number: ");
+    scanf("%d", &num);
 
-while (temp != 0)
-{
-    rem = temp % 8;
-    sum = sum + i * rem;
-    i = i * 10;
-    temp = temp / 8;
-}
+    while (num != 0)
+    {
+        arr[i] = num % 8;
+        num = num / 8;
+        i++;
+    }
+    printf("Decimal to Octal number is: ");
 
-printf("Decimal to 0ctal number is: %d", sum);
+    for (j = i - 1; j >= 0; j--)
+
+        printf("%d", arr[j]);
 }
