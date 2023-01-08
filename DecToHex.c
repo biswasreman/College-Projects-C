@@ -2,29 +2,26 @@
 int main()
 {
 
-    int num, temp, rem, i = 1, j;
-    char hexa[50];
+    int arr[15], num, i, j;
+    i = 0;
     printf("Enter any decimal number: ");
     scanf("%d", &num);
-    temp = num;
 
-    while (temp != 0)
+    while (num != 0)
     {
-        rem = temp % 16;
-        if (rem < 10)
-            rem = rem + 48;
-        else
-            rem = rem + 55;
-        hexa[i] = rem;
-        temp = temp / 16;
+        arr[i] = num % 16;
+        num = num / 16;
         i++;
     }
-    printf("Hexadecimal number is: ");
+    printf("Decimal to Hexadecimal number is: ");
 
-    for (j = i - 1; j > 0; j--)
-    {
-        printf("%c", hexa[j]);
-    }
+    for (j = i - 1; j >= 0; j--)
+
+        if (arr[j] < 10)
+            printf("%d", arr[j]);
+
+        else
+            printf("%c", arr[j] + 55);
 
     return 0;
 }
