@@ -27,6 +27,10 @@ int main()
             c[i][j] = a[i][j] + b[i][j];
     }
 
+    printf("Display in matrix form : ");
+    printf("\n");
+    printf("\n");
+
 
     for (i = 0; i < 2; i++)
     {
@@ -35,7 +39,3 @@ int main()
             printf("\n");
     }
 }
-
-
-
-
