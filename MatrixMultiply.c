@@ -2,11 +2,11 @@
 int main()
 {
     int sum = 0, i, j, k;
-    int a[2][3], b[2][3], result[2][3];
+    int a[3][3], b[3][3], result[3][3];
 
     printf("Enter the first matrix : ");
 
-    for (i = 0; i < 2; i++)
+    for (i = 0; i < 3; i++)
     {
         for (j = 0; j < 3; j++)
         {
@@ -15,7 +15,7 @@ int main()
     }
     printf("Enter the second matrix : ");
 
-    for (i = 0; i < 2; i++)
+    for (i = 0; i < 3; i++)
     {
         for (j = 0; j < 3; j++)
         {
@@ -26,7 +26,7 @@ int main()
 
     }
 
-    for (i = 0; i < 2; i++)
+    for (i = 0; i < 3; i++)
     {
         for (j = 0; j < 3; j++)
         {
@@ -44,7 +44,7 @@ int main()
     printf("\n");
     printf("\n");
 
-    for (i = 0; i < 2; i++)
+    for (i = 0; i < 3; i++)
     {
         for (j = 0; j < 3; j++)
             printf("%4d", result[i][j]);
@@ -52,5 +52,3 @@ int main()
     }
     return 0;
 }
-
-
